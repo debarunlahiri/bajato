@@ -21,6 +21,10 @@ $navItems = [
     ['label' => 'Contact', 'href' => 'index.php#contact'],
 ];
 
+$brandHref = 'index.php';
+$contactHref = 'index.php#contact';
+$activeNavLabel = 'Products';
+
 $filterCategories = [
     ['label' => 'All Products', 'slug' => 'all'],
     ['label' => 'Tail Lamp', 'slug' => 'tail-lamp'],
@@ -70,34 +74,7 @@ foreach ($catalog as $group) {
 </head>
 <body>
     <div class="page-shell">
-        <header class="site-header" id="top">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container navbar-layout">
-                    <a class="navbar-brand" href="index.php">
-                        <img src="<?php echo htmlspecialchars($site['logo']); ?>" alt="<?php echo htmlspecialchars($site['brand']); ?> logo" class="brand-logo">
-                        <span class="brand-lockup">
-                            <span class="brand-text"><?php echo htmlspecialchars($site['brand']); ?></span>
-                            <span class="brand-subtext"><?php echo htmlspecialchars($site['tagline']); ?></span>
-                        </span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mainNav">
-                        <ul class="navbar-nav navbar-menu align-items-lg-center">
-                            <?php foreach ($navItems as $item): ?>
-                                <li class="nav-item">
-                                    <a class="nav-link <?php echo $item['label'] === 'Products' ? 'active' : ''; ?>" href="<?php echo htmlspecialchars($item['href']); ?>"><?php echo htmlspecialchars($item['label']); ?></a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                        <div class="navbar-cta">
-                            <a class="btn btn-sm btn-brand-primary" href="index.php#contact">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <?php include __DIR__ . '/includes/header.php'; ?>
 
         <main class="products-page">
             <section class="products-hero">
@@ -174,43 +151,7 @@ foreach ($catalog as $group) {
             </section>
         </main>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="footer-shell">
-                    <div class="footer-brand">
-                        <a class="footer-brand-link" href="index.php#top">
-                            <img src="<?php echo htmlspecialchars($site['logo']); ?>" alt="<?php echo htmlspecialchars($site['brand']); ?> logo" class="footer-logo">
-                            <span class="footer-brand-copy">
-                                <span class="footer-brand-text"><?php echo htmlspecialchars($site['brand']); ?></span>
-                                <span class="footer-brand-subtext"><?php echo htmlspecialchars($site['tagline']); ?></span>
-                            </span>
-                        </a>
-                        <p><?php echo htmlspecialchars($site['footer']['summary']); ?></p>
-                    </div>
-
-                    <div class="footer-links">
-                        <div class="footer-column">
-                            <span class="footer-heading">Quick Links</span>
-                            <a href="index.php#top">Home</a>
-                            <a href="index.php#about">About</a>
-                            <a href="products.php">Products</a>
-                            <a href="index.php#manufacturing">Manufacturing</a>
-                            <a href="index.php#contact">Contact</a>
-                        </div>
-                        <div class="footer-column">
-                            <span class="footer-heading">Contact</span>
-                            <a href="mailto:sales@bajato.com">sales@bajato.com</a>
-                            <a href="https://wa.me/919821591599?text=Hello%20Bajato%2C%20I%20would%20like%20to%20connect%20with%20your%20team.">+91-9821591599</a>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Plot%20No%20116%2C%20Sector-3%2C%20HSIIDC%2C%20IMT%20Manesar%2C%20Gurugram%20122051">Plot No 116, Sector-3, HSIIDC, IMT Manesar, Gurugram-122051</a>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <span><?php echo htmlspecialchars($site['footer']['copyright']); ?></span>
-                        <span>Built for OEM, aftermarket, and export buyers.</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include __DIR__ . '/includes/footer.php'; ?>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

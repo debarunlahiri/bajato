@@ -2,7 +2,7 @@
 $site = [
     'brand' => 'Bajato',
     'tagline' => 'Automotive lights & parts',
-    'logo' => 'assets/images/logo.jpeg',
+    'logo' => 'assets/images/logo.png',
     'header_banner' => 'assets/images/header_image.jpg',
     'meta_title' => 'Bajato | Automotive lights & parts',
     'meta_description' => 'We offer a wide range of products for application in buses, coaches, trailers, ambulances, and other special vehicles. Premium lighting solutions engineered for international standards and built for the world.',
@@ -193,8 +193,8 @@ $site = [
                 'icon' => 'bi-patch-check',
             ],
             [
-                'title' => 'E9 Approval',
-                'text' => 'Recognized across multiple international jurisdictions for global distribution.',
+                'title' => 'ICAT Approval',
+                'text' => 'Approved by ICAT, ensuring compliance with required automotive testing, certification, and homologation standards.',
                 'icon' => 'bi-globe2',
             ],
             [
@@ -269,7 +269,7 @@ $site = [
             ['title' => 'Manufacturing Plants', 'text' => 'Both located in Manesar, Gurugram'],
             ['title' => 'Product Categories', 'text' => 'Tail, Marker, Auxiliary, Headlamps'],
             ['title' => 'In-House Development', 'text' => 'Full NPD capability on-site'],
-            ['title' => 'International Certifications', 'text' => 'E-Mark, E9, ISO compliant'],
+            ['title' => 'International Certifications', 'text' => 'E-Mark, ICAT Approval, ISO compliant'],
         ],
     ],
     'faq' => [
@@ -286,7 +286,7 @@ $site = [
             ],
             [
                 'question' => 'Do your products support international markets?',
-                'answer' => 'Our portfolio is built around internationally recognized compliance requirements, including E-Mark, E9, and ISO-aligned manufacturing systems.',
+                'answer' => 'Our portfolio is built around internationally recognized compliance requirements, including E-Mark, ICAT Approval, and ISO-aligned manufacturing systems.',
             ],
             [
                 'question' => 'Can you work with OEMs and aftermarket buyers?',
@@ -299,12 +299,12 @@ $site = [
         'title' => 'Let\'s Build Something Together',
         'description' => 'Ready to discuss your lighting requirements? Our team is available to support your procurement, technical, and partnership enquiries.',
         'details' => [
-            ['label' => 'Email', 'value' => 'sales@bajato.com', 'href' => 'mailto:sales@bajato.com', 'icon' => 'bi-envelope'],
-            ['label' => 'WhatsApp', 'value' => '+91-9821591599', 'href' => 'https://wa.me/919821591599?text=Hello%20Bajato%2C%20I%20would%20like%20to%20connect%20with%20your%20team.', 'icon' => 'bi-whatsapp'],
-            ['label' => 'Plant Address', 'value' => 'Plot No 116, Sector-3, HSIIDC, IMT Manesar, Gurugram-122051', 'href' => 'https://www.google.com/maps/search/?api=1&query=Plot%20No%20116%2C%20Sector-3%2C%20HSIIDC%2C%20IMT%20Manesar%2C%20Gurugram%20122051', 'icon' => 'bi-geo-alt'],
+            ['label' => 'Email', 'value' => 'sales@bajato.com', 'href' => 'mailto:sales@bajato.com', 'icon' => 'bi-envelope', 'target' => '_blank', 'rel' => 'noopener'],
+            ['label' => 'WhatsApp', 'value' => '+91-9821591599', 'href' => 'https://wa.me/919821591599?text=Hello%20Bajato%2C%20I%20would%20like%20to%20connect%20with%20your%20team.', 'icon' => 'bi-whatsapp', 'target' => '_blank', 'rel' => 'noopener'],
+            ['label' => 'Plant Address', 'value' => 'Plot No 116, Sector-3, HSIIDC, IMT Manesar, Gurugram-122051', 'href' => 'https://www.google.com/maps/search/?api=1&query=Plot%20No%20116%2C%20Sector-3%2C%20HSIIDC%2C%20IMT%20Manesar%2C%20Gurugram%20122051', 'icon' => 'bi-geo-alt', 'target' => '_blank', 'rel' => 'noopener'],
         ],
         'buttons' => [
-            ['label' => 'Request a Quote', 'href' => 'https://wa.me/919821591599?text=Hello%20Bajato%2C%20please%20share%20a%20quote%20for%20automotive%20lighting%20products.', 'class' => 'btn btn-brand-primary notify-cta'],
+            ['label' => 'Request a Quote', 'href' => 'https://wa.me/919821591599?text=Hello%20Bajato%2C%20please%20share%20a%20quote%20for%20automotive%20lighting%20products.', 'class' => 'btn btn-brand-primary notify-cta', 'target' => '_blank', 'rel' => 'noopener'],
         ],
     ],
     'footer' => [
@@ -314,12 +314,28 @@ $site = [
 ];
 
 $navItems = [
-    ['label' => 'Home', 'href' => '#top'],
+    ['label' => 'Home', 'href' => 'index.php'],
     ['label' => 'About', 'href' => '#about'],
     ['label' => 'Products', 'href' => '#products'],
     ['label' => 'Manufacturing', 'href' => '#manufacturing'],
     ['label' => 'Compliance', 'href' => '#compliance'],
     ['label' => 'Contact', 'href' => '#contact'],
+];
+
+$brandHref = '#top';
+$contactHref = '#contact';
+$footerBrandHref = '#top';
+$footerLinks = [
+    ['label' => 'Home', 'href' => '#top'],
+    ['label' => 'About', 'href' => '#about'],
+    ['label' => 'Products', 'href' => '#products'],
+    ['label' => 'Manufacturing', 'href' => '#manufacturing'],
+    ['label' => 'Contact', 'href' => '#contact'],
+];
+$footerContactLinks = [
+    ['label' => 'sales@bajato.com', 'href' => 'https://mail.google.com/mail/?view=cm&fs=1&to=sales@bajato.com', 'target' => '_blank', 'rel' => 'noopener'],
+    ['label' => '+91-9821591599', 'href' => 'https://wa.me/919821591599?text=Hello%20Bajato%2C%20I%20would%20like%20to%20connect%20with%20your%20team.'],
+    ['label' => 'Plot No 116, Sector-3, HSIIDC, IMT Manesar, Gurugram-122051', 'href' => 'https://www.google.com/maps/search/?api=1&query=Plot%20No%20116%2C%20Sector-3%2C%20HSIIDC%2C%20IMT%20Manesar%2C%20Gurugram%20122051'],
 ];
 ?>
 <!DOCTYPE html>
@@ -338,39 +354,7 @@ $navItems = [
 </head>
 <body>
     <div class="page-shell">
-        <header class="site-header" id="top">
-            <?php /* 
-            <div class="header-banner">
-                <img src="<?php echo htmlspecialchars($site['header_banner']); ?>" alt="Bajato automotive banner" class="header-banner-image">
-            </div>
-            */ ?>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container navbar-layout">
-                    <a class="navbar-brand" href="#top">
-                        <img src="<?php echo htmlspecialchars($site['logo']); ?>" alt="<?php echo htmlspecialchars($site['brand']); ?> logo" class="brand-logo">
-                        <span class="brand-lockup">
-                            <span class="brand-text"><?php echo htmlspecialchars($site['brand']); ?></span>
-                            <span class="brand-subtext"><?php echo htmlspecialchars($site['tagline']); ?></span>
-                        </span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mainNav">
-                        <ul class="navbar-nav navbar-menu align-items-lg-center">
-                            <?php foreach ($navItems as $item): ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo htmlspecialchars($item['href']); ?>"><?php echo htmlspecialchars($item['label']); ?></a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                        <div class="navbar-cta">
-                            <a class="btn btn-sm btn-brand-primary" href="#contact">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <?php include __DIR__ . '/includes/header.php'; ?>
 
         <main>
             <section class="full-carousel-section section-space" id="gallery">
@@ -666,7 +650,7 @@ $navItems = [
                 </div>
             </section>
 
-            <section class="section-space" id="reach">
+            <section class="section-space reach-section" id="reach">
                 <div class="container">
                     <div class="section-heading text-center">
                         <span class="section-kicker"><?php echo htmlspecialchars($site['reach']['kicker']); ?></span>
@@ -721,7 +705,7 @@ $navItems = [
                                 <p class="retail-note">We also welcome online retail enquiries from across the world.</p>
                                 <div class="hero-actions">
                                     <?php foreach ($site['contact']['buttons'] as $button): ?>
-                                        <a class="<?php echo htmlspecialchars($button['class']); ?>" href="<?php echo htmlspecialchars($button['href']); ?>"><?php echo htmlspecialchars($button['label']); ?></a>
+                                        <a class="<?php echo htmlspecialchars($button['class']); ?>" href="<?php echo htmlspecialchars($button['href']); ?>"<?php echo !empty($button['target']) ? ' target="' . htmlspecialchars($button['target']) . '"' : ''; ?><?php echo !empty($button['rel']) ? ' rel="' . htmlspecialchars($button['rel']) . '"' : ''; ?>><?php echo htmlspecialchars($button['label']); ?></a>
                                     <?php endforeach; ?>
                                 </div>
                             </div>
@@ -729,7 +713,7 @@ $navItems = [
                                 <div class="row g-3">
                                     <?php foreach ($site['contact']['details'] as $detail): ?>
                                         <div class="col-md-4 col-lg-12">
-                                            <a class="contact-card" href="<?php echo htmlspecialchars($detail['href']); ?>">
+                                            <a class="contact-card" href="<?php echo htmlspecialchars($detail['href']); ?>"<?php echo !empty($detail['target']) ? ' target="' . htmlspecialchars($detail['target']) . '"' : ''; ?><?php echo !empty($detail['rel']) ? ' rel="' . htmlspecialchars($detail['rel']) . '"' : ''; ?>>
                                                 <div class="contact-icon"><i class="bi <?php echo htmlspecialchars($detail['icon']); ?>"></i></div>
                                                 <div>
                                                     <span><?php echo htmlspecialchars($detail['label']); ?></span>
@@ -748,43 +732,7 @@ $navItems = [
             </section>
         </main>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="footer-shell ">
-                    <div class="footer-brand">
-                        <a class="footer-brand-link" href="#top">
-                            <img src="<?php echo htmlspecialchars($site['logo']); ?>" alt="<?php echo htmlspecialchars($site['brand']); ?> logo" class="footer-logo">
-                            <span class="footer-brand-copy">
-                                <span class="footer-brand-text"><?php echo htmlspecialchars($site['brand']); ?></span>
-                                <span class="footer-brand-subtext"><?php echo htmlspecialchars($site['tagline']); ?></span>
-                            </span>
-                        </a>
-                        <p><?php echo htmlspecialchars($site['footer']['summary']); ?></p>
-                    </div>
-
-                    <div class="footer-links">
-                        <div class="footer-column">
-                            <span class="footer-heading">Quick Links</span>
-                            <a href="#top">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#products">Products</a>
-                            <a href="#manufacturing">Manufacturing</a>
-                            <a href="#contact">Contact</a>
-                        </div>
-                        <div class="footer-column">
-                            <span class="footer-heading">Contact</span>
-                           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@bajato.com" target="_blank" rel="noopener">sales@bajato.com</a>
-                            <a href="https://wa.me/919821591599?text=Hello%20Bajato%2C%20I%20would%20like%20to%20connect%20with%20your%20team.">+91-9821591599</a>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Plot%20No%20116%2C%20Sector-3%2C%20HSIIDC%2C%20IMT%20Manesar%2C%20Gurugram%20122051">Plot No 116, Sector-3, HSIIDC, IMT Manesar, Gurugram-122051</a>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <span><?php echo htmlspecialchars($site['footer']['copyright']); ?></span>
-                        <span>Built for OEM, aftermarket, and export buyers.</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include __DIR__ . '/includes/footer.php'; ?>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

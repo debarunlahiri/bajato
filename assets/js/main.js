@@ -89,9 +89,9 @@ document.addEventListener("DOMContentLoaded", () => {
             return false;
         }
 
-        const headerOffset = siteHeader ? siteHeader.offsetHeight + 18 : 112;
+        const headerOffset = siteHeader ? siteHeader.offsetHeight + 42 : 150;
         const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset;
-        window.scrollTo({ top: Math.max(targetTop, 0), behavior: "smooth" });
+        window.scrollTo({ top: Math.max(targetTop, 0), left: 0, behavior: "smooth" });
         history.pushState(null, "", hash);
         return true;
     };

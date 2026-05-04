@@ -12,11 +12,12 @@
     --radius-xl: 30px;
     --radius-lg: 24px;
     --radius-md: 18px;
+    --anchor-offset: 150px;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 112px;
+    scroll-padding-top: var(--anchor-offset);
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     color: var(--brand-ink);
     font-family: "Manrope", sans-serif;
     background: linear-gradient(180deg, #f8fafc 0%, #f2f6fb 40%, #ffffff 100%);
+    overflow-x: hidden;
 }
 
 a {
@@ -41,12 +43,12 @@ img {
 
 .section-space {
     padding: 88px 0;
-    scroll-margin-top: 112px;
+    scroll-margin-top: var(--anchor-offset);
 }
 
 section[id],
 header[id] {
-    scroll-margin-top: 112px;
+    scroll-margin-top: var(--anchor-offset);
 }
 
 .hero-section {
@@ -89,7 +91,7 @@ header[id] {
 }
 
 .navbar {
-    padding: 22px 0;
+    padding: 13px 0;
     background: #fff;
 }
 
@@ -108,8 +110,8 @@ header[id] {
 }
 
 .brand-logo {
-    width: 86px;
-    height: 86px;
+    width: 104px;
+    height: 104px;
     object-fit: contain;
     object-position: center;
 }
@@ -977,6 +979,19 @@ header[id] {
     background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
 }
 
+.reach-section .metric-card h3 {
+    white-space: nowrap;
+    font-size: 1.08rem;
+}
+
+.reach-section .metric-card {
+    justify-content: flex-start;
+}
+
+.reach-section .metric-card p {
+    min-height: 3.4em;
+}
+
 .faq-section {
     padding-top: 72px;
 }
@@ -1448,7 +1463,27 @@ header[id] {
     line-height: 1.7;
 }
 
+.footer-column a {
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
+}
+
+.footer-column a i {
+    width: 20px;
+    padding-top: 5px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.92rem;
+    text-align: center;
+}
+
 .footer-column a:hover {
+    color: #fff;
+}
+
+.footer-column a:hover i,
+.footer-column a:hover span {
     color: #fff;
 }
 
@@ -1476,6 +1511,41 @@ header[id] {
 }
 
 @media (max-width: 1199.98px) {
+    .navbar {
+        padding: 7px 0;
+    }
+
+    .navbar-layout {
+        column-gap: 16px;
+    }
+
+    .brand-logo {
+        width: 78px;
+        height: 78px;
+    }
+
+    .brand-text {
+        font-size: 0.96rem;
+    }
+
+    .brand-subtext {
+        font-size: 0.64rem;
+        letter-spacing: 0.12em;
+    }
+
+    .navbar-nav {
+        gap: 2px;
+    }
+
+    .nav-link {
+        font-size: 0.88rem;
+        padding-right: 0.42rem;
+        padding-left: 0.42rem;
+    }
+
+    .navbar-cta .btn {
+        padding: 0.78rem 1.1rem;
+    }
 
     .full-carousel-media,
     .full-carousel-image,
@@ -1495,9 +1565,22 @@ header[id] {
     .partner-advantage-shell {
         grid-template-columns: 1fr;
     }
+
+    .reach-section .metric-card h3 {
+        white-space: normal;
+        font-size: 1.18rem;
+    }
+
+    .reach-section .metric-card p {
+        min-height: 0;
+    }
 }
 
 @media (max-width: 991.98px) {
+    :root {
+        --anchor-offset: 190px;
+    }
+
     .section-space {
         padding: 72px 0;
     }
