@@ -1,10 +1,10 @@
 <?php
-$footerBrandHref = $footerBrandHref ?? 'index.php#top';
+$footerBrandHref = $footerBrandHref ?? 'index.php';
 $footerLinks = $footerLinks ?? [
-    ['label' => 'Home', 'href' => 'index.php#top', 'icon' => 'bi-house'],
+    ['label' => 'Home', 'href' => 'index.php', 'icon' => 'bi-house'],
     ['label' => 'About', 'href' => 'index.php#about', 'icon' => 'bi-info-circle'],
     ['label' => 'Products', 'href' => 'products.php', 'icon' => 'bi-box-seam'],
-    ['label' => 'Manufacturing', 'href' => 'index.php#manufacturing', 'icon' => 'bi-buildings'],
+    ['label' => 'Manufacturing', 'href' => 'index.php#process', 'icon' => 'bi-buildings'],
     ['label' => 'Contact', 'href' => 'index.php#contact', 'icon' => 'bi-person-lines-fill'],
 ];
 $footerContactLinks = $footerContactLinks ?? [
@@ -27,7 +27,7 @@ $footerIconMap = [
     <div class="container">
         <div class="footer-shell">
             <div class="footer-brand">
-                <a class="footer-brand-link" href="<?php echo htmlspecialchars($footerBrandHref); ?>" target="_blank" rel="noopener">
+                <a class="footer-brand-link" href="<?php echo htmlspecialchars($footerBrandHref); ?>">
                     <img src="<?php echo htmlspecialchars($site['logo']); ?>" alt="<?php echo htmlspecialchars($site['brand']); ?> logo" class="footer-logo">
                     <span class="footer-brand-copy">
                         <span class="footer-brand-text"><?php echo htmlspecialchars($site['brand']); ?></span>
@@ -42,7 +42,7 @@ $footerIconMap = [
                     <span class="footer-heading">Quick Links</span>
                     <?php foreach ($footerLinks as $link): ?>
                         <?php $icon = $link['icon'] ?? $footerIconMap[$link['label']] ?? ''; ?>
-                        <a href="<?php echo htmlspecialchars($link['href']); ?>" target="<?php echo htmlspecialchars($link['target'] ?? '_blank'); ?>" rel="<?php echo htmlspecialchars($link['rel'] ?? 'noopener'); ?>">
+                        <a href="<?php echo htmlspecialchars($link['href']); ?>"<?php echo !empty($link['target']) ? ' target="' . htmlspecialchars($link['target']) . '"' : ''; ?><?php echo !empty($link['rel']) ? ' rel="' . htmlspecialchars($link['rel']) . '"' : ''; ?>>
                             <?php if ($icon !== ''): ?>
                                 <i class="bi <?php echo htmlspecialchars($icon); ?>" aria-hidden="true"></i>
                             <?php endif; ?>
@@ -54,7 +54,7 @@ $footerIconMap = [
                     <span class="footer-heading">Contact</span>
                     <?php foreach ($footerContactLinks as $link): ?>
                         <?php $icon = $link['icon'] ?? $footerIconMap[$link['label']] ?? ''; ?>
-                        <a href="<?php echo htmlspecialchars($link['href']); ?>" target="<?php echo htmlspecialchars($link['target'] ?? '_blank'); ?>" rel="<?php echo htmlspecialchars($link['rel'] ?? 'noopener'); ?>">
+                        <a href="<?php echo htmlspecialchars($link['href']); ?>"<?php echo !empty($link['target']) ? ' target="' . htmlspecialchars($link['target']) . '"' : ''; ?><?php echo !empty($link['rel']) ? ' rel="' . htmlspecialchars($link['rel']) . '"' : ''; ?>>
                             <?php if ($icon !== ''): ?>
                                 <i class="bi <?php echo htmlspecialchars($icon); ?>" aria-hidden="true"></i>
                             <?php endif; ?>

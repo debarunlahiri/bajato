@@ -4,7 +4,7 @@ $catalog = require __DIR__ . '/products-data.php';
 $site = [
     'brand' => 'Bajato',
     'tagline' => 'Automotive lights & parts',
-    'logo' => 'assets/images/logo.jpeg',
+    'logo' => 'assets/images/logo.png',
     'meta_title' => 'Products | Bajato',
     'footer' => [
         'summary' => 'Automotive lighting and parts for buses, coaches, trailers, ambulances, and special vehicle programs.',
@@ -13,10 +13,10 @@ $site = [
 ];
 
 $navItems = [
-    ['label' => 'Home', 'href' => 'index.php#top'],
+    ['label' => 'Home', 'href' => 'index.php'],
     ['label' => 'About', 'href' => 'index.php#about'],
     ['label' => 'Products', 'href' => 'products.php'],
-    ['label' => 'Manufacturing', 'href' => 'index.php#manufacturing'],
+    ['label' => 'Manufacturing', 'href' => 'index.php#process'],
     ['label' => 'Compliance', 'href' => 'index.php#compliance'],
     ['label' => 'Contact', 'href' => 'index.php#contact'],
 ];
