@@ -65,7 +65,7 @@ $footerIconMap = [
             </div>
             <div class="footer-bottom">
                 <span><?php echo htmlspecialchars($site['footer']['copyright']); ?></span>
-                <span>Built for OEM, aftermarket, and export buyers.</span>
+                <span>Designed and developed by <a href="https://techproitsolutions.in/" target="_blank" rel="noopener">Techpro IT Solutions</a></span>
             </div>
         </div>
     </div>

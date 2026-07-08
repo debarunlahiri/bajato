@@ -110,8 +110,8 @@ header[id] {
 }
 
 .brand-logo {
-    width: 104px;
-    height: 104px;
+    width: 184px;
+    height: auto;
     object-fit: contain;
     object-position: center;
 }
@@ -381,8 +381,8 @@ header[id] {
 }
 
 .hero-brand-logo {
-    width: 76px;
-    height: 76px;
+    width: 168px;
+    height: auto;
     padding: 8px;
     object-fit: contain;
     object-position: center;
@@ -1402,8 +1402,8 @@ header[id] {
 }
 
 .footer-logo {
-    width: 72px;
-    height: 72px;
+    width: 154px;
+    height: auto;
     object-fit: contain;
     object-position: center;
 }
@@ -1499,6 +1499,15 @@ header[id] {
     font-size: 0.9rem;
 }
 
+.footer-bottom a {
+    color: rgba(255, 255, 255, 0.82);
+    font-weight: 700;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(24px);
@@ -1520,8 +1529,8 @@ header[id] {
     }
 
     .brand-logo {
-        width: 78px;
-        height: 78px;
+        width: 148px;
+        height: auto;
     }
 
     .brand-text {
@@ -1825,8 +1834,8 @@ header[id] {
     }
 
     .footer-logo {
-        width: 60px;
-        height: 60px;
+        width: 128px;
+        height: auto;
     }
 
     .partner-advantage-card {
