@@ -13,7 +13,8 @@ return [
             ['title' => 'Multiple use lamp', 'code' => 'SL-558', 'image' => 'assets/images/products/sl-558.jpg', 'details' => ['Bus / Coach', 'Available in: Red, Amber, Green, Blue and Clear']],
             ['title' => 'Roof Top Marker', 'code' => 'SL-513', 'image' => 'assets/images/products/sl-513.jpg', 'details' => ['Bus / Coach', 'Available in: Red, Amber, Green, Blue and Clear']],
             ['title' => 'Roof Top Marker - Fish shape', 'code' => 'SL-506', 'image' => 'assets/images/products/sl-506.jpg', 'details' => ['Bus / Coach', 'Available in Red, Amber, Blue, Green & Clear']],
-            ['title' => 'Side Indicator', 'code' => 'SL-515', 'image' => 'assets/images/products/sl-515.jpg', 'details' => ['Bus / Coach', 'Available in combination of Red, Amber & Clear']],
+            // Previous image: assets/images/products/sl-515.jpg
+            ['title' => 'Side Indicator', 'code' => 'SL-515', 'image' => 'assets/images/products/sl-515-indiamart.png', 'details' => ['Bus / Coach', 'Available in combination of Red, Amber & Clear']],
             ['title' => 'Side Indicator', 'code' => 'SL-550', 'image' => 'assets/images/products/sl-550.jpg', 'details' => ['Bus / Coach', 'Available in combination of Red, Amber & Clear']],
             ['title' => 'Side Indicator', 'code' => 'SL-522', 'image' => 'assets/images/products/sl-522.jpeg', 'details' => ['Bus / Coach', 'Available in combination of Red, Amber & Clear']],
             ['title' => 'Side Indicator', 'code' => 'SL-522', 'image' => 'assets/images/products/sl-522.jpeg', 'details' => ['Bus / Coach']],
@@ -28,9 +29,11 @@ return [
         'source' => 'https://buscoachlights.in/markers.html',
         'items' => [
             ['title' => 'Roof Top / Side Marker', 'code' => 'SL-565', 'image' => 'assets/images/products/sl-565.jpg', 'details' => ['Bus / Coach', 'Available in: Red, Amber, Green, Blue and Clear']],
-            ['title' => 'Roof Top Marker', 'code' => 'SL-517', 'image' => 'assets/images/products/sl-517.jpg', 'details' => ['Bus / Coach', 'Available in: Red-Amber & Red-Clear Combination']],
+            // Previous image: assets/images/products/sl-517.jpg
+            ['title' => 'Roof Top Marker', 'code' => 'SL-517', 'image' => 'assets/images/products/sl-517-indiamart.png', 'details' => ['Bus / Coach', 'Available in: Red-Amber & Red-Clear Combination']],
             ['title' => 'Flap Marker', 'code' => 'SL-519', 'image' => 'assets/images/products/sl-519.jpg', 'details' => ['Bus / Coach', 'Available in: Red, Amber, Green, Blue, Red-Clear, Red-Amber, Amber-Clear Combo']],
-            ['title' => 'Flap Marker', 'code' => 'SL-544', 'image' => 'assets/images/products/sl-544.jpg', 'details' => ['Bus / Coach', 'Available in: Red, Amber, Green, Blue, Red-Clear, Red-Amber, Amber-Clear Combo']],
+            // Previous image: assets/images/products/sl-544.jpg
+            ['title' => 'Flap Marker', 'code' => 'SL-544', 'image' => 'assets/images/products/sl-544-indiamart.png', 'details' => ['Bus / Coach', 'Available in: Red, Amber, Green, Blue, Red-Clear, Red-Amber, Amber-Clear Combo']],
             ['title' => 'Flap Marker', 'code' => 'SL-518', 'image' => 'assets/images/products/sl-518.jpg', 'details' => ['Bus / Coach', 'Universal Application Available in Red, Amber, Clear (on either side)']],
             ['title' => 'Flap Marker', 'code' => 'SL-520', 'image' => 'assets/images/products/sl-520.jpg', 'details' => ['Bus / Coach', 'Available in Red, Amber, Clear.']],
             ['title' => 'Roof Top Marker - Fish shape', 'code' => 'BCL-104', 'image' => 'assets/images/products/bcl-104.jpg', 'details' => ['Bus / Coach', 'Available in Red, Amber, Blue, Green & Clear']],
@@ -89,7 +92,8 @@ return [
             ['title' => 'Roof Lamp', 'code' => 'AX-1004', 'image' => 'assets/images/products/ax-1004.jpg', 'details' => ['Bus / Coach']],
             ['title' => 'Roof Lamp', 'code' => 'AX-1005', 'image' => 'assets/images/products/ax-1005.jpg', 'details' => ['Bus / Coach']],
             ['title' => 'Roof Lamp', 'code' => 'AX-1006', 'image' => 'assets/images/products/ax-1006.jpg', 'details' => ['Bus / Coach']],
-            ['title' => 'Roof Lamp', 'code' => 'AX-1008', 'image' => 'assets/images/products/ax-1008.jpg', 'details' => ['Bus / Coach']],
+            // Previous image: assets/images/products/ax-1008.jpg
+            ['title' => 'Roof Lamp', 'code' => 'AX-1008', 'image' => 'assets/images/products/ax-1008-indiamart.png', 'details' => ['Bus / Coach']],
             ['title' => 'Roof Lamp', 'code' => 'AX-1009', 'image' => 'assets/images/products/ax-1009.jpg', 'details' => ['Bus / Coach']],
             ['title' => 'Roof Lamp', 'code' => 'AX-1011', 'image' => 'assets/images/products/ax-1011.jpg', 'details' => ['Bus / Coach']],
         ],
